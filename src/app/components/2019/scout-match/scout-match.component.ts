@@ -52,7 +52,8 @@ export class ScoutMatchComponent implements OnInit {
     results.matchComments = this.fgMatch.controls.matchNotes.value;
     console.log(`JSON data to submit: ${JSON.stringify(results, null, 4)}`);
     this.dataStorage.saveMatch(results).subscribe((r) => {
-      alert(r);
+      // TODO: Properly handle the response
+      console.log(r);
     });
   }
 }
