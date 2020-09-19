@@ -1,0 +1,33 @@
+<form [formGroup]="this.fgMatch">
+  <div class="flex-col">
+    <div class="flex-row score-label">
+      High Goal
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="primary" class="pm-button" (click)="this.highGoalDec()">-</button>
+      <p class="score">{{ this.highGoalScore }}</p>
+      <button mat-raised-button color="primary" class="pm-button" (click)="this.highGoalInc()">+</button>
+    </div>
+    <div class="flex-row score-label">
+      Low Goal
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button class="pm-button" color="primary" (click)="this.lowGoalDec()">-</button>
+      <p class="score">{{ this.lowGoalScore }}</p>
+      <button mat-raised-button class="pm-button" color="primary" (click)="this.lowGoalInc()">+</button>
+    </div>
+    <div class="flex-row">
+      <mat-form-field class="comment-box">
+        <mat-label>Match Notes:</mat-label>
+        <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="3"
+                  cdkAutosizeMaxRows="5"
+                  formControlName="matchNotes"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="accent" (click)="this.recordData()">
+        SUBMIT DATA
+      </button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,36 @@
+.pm-button {
+  width: 4em;
+  height: 4em;
+  font-size: 16pt;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.score {
+  font-size: 24pt;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.score-label {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.comment-box {
+  display: flex;
+}

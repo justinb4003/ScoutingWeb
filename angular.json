@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ScoutingWeb": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ScoutingWeb"
+    }
+  },
+  "defaultProject": "ScoutingWeb",
+  "cli": {
+    "analytics": "13d9b49f-b4c0-48cd-bd41-bb892ca701cf"
+  }
 }
