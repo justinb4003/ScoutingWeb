@@ -4,17 +4,17 @@
       High Goal
     </div>
     <div class="flex-row">
-      <button mat-raised-button color="primary" class="pm-button" (click)="this.highGoalDec()">-</button>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.highGoalDec()">-</button>
       <p class="score">{{ this.highGoalScore }}</p>
-      <button mat-raised-button color="primary" class="pm-button" (click)="this.highGoalInc()">+</button>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.highGoalInc()">+</button>
     </div>
     <div class="flex-row score-label">
       Low Goal
     </div>
     <div class="flex-row">
-      <button mat-raised-button class="pm-button" color="primary" (click)="this.lowGoalDec()">-</button>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.lowGoalDec()">-</button>
       <p class="score">{{ this.lowGoalScore }}</p>
-      <button mat-raised-button class="pm-button" color="primary" (click)="this.lowGoalInc()">+</button>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.lowGoalInc()">+</button>
     </div>
     <div class="flex-row">
       <mat-form-field class="comment-box">
@@ -25,7 +25,7 @@
       </mat-form-field>
     </div>
     <div class="flex-row">
-      <button mat-raised-button color="accent" (click)="this.recordData()">
+      <button mat-raised-button color="ts-blue" (click)="this.recordData()">
         SUBMIT DATA
       </button>
     </div>

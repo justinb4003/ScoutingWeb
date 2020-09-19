@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+.mat-ts-deepred {
+  background-color: #972123;
+}
+
+.mat-ts-red {
+  background-color: #d31112;
+}
+
+.mat-ts-blue {
+  background-color: #8bb8e8;
+  color: #000000;
+}
