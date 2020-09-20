@@ -1,9 +1,9 @@
-<mat-sidenav-container [hasBackdrop]="!media.isActive('gt-sm')"
+<mat-sidenav-container [hasBackdrop]="!media.isActive('gt-xs')"
      fxLayout="row" fxLayoutAlign="start stretch" fxFlexFill autosize
      role="main" class="main-container">
-  <mat-sidenav [mode]="media.isActive('gt-sm') ? 'side' : 'over'"
-               [opened]="media.isActive('gt-sm')"
-               [disableClose]="media.isActive('gt-sm')"
+  <mat-sidenav [mode]="media.isActive('gt-xs') ? 'side' : 'over'"
+               [opened]="media.isActive('gt-xs')"
+               [disableClose]="media.isActive('gt-xs')"
                class="main-sidenav"
                #sidenav>
     <div class="menu-container">
@@ -33,7 +33,7 @@
   <mat-sidenav-content>
     <mat-toolbar>
       <mat-toolbar-row class="main-toolbar">
-        <button mat-icon-button [fxShow]="!media.isActive('gt-sm')"
+        <button mat-icon-button [fxShow]="!media.isActive('gt-xs')"
                 (click)="this.displaySidenavMenu()"><mat-icon aria-label="Menu">menu</mat-icon></button>
         <span class="toolbar-spacer"></span>
         <body class="mat-body">Welcome, User!</body>
