@@ -1,21 +1,113 @@
 <form [formGroup]="this.fgMatch">
   <div class="flex-col">
-    <div class="flex-row score-label">
-      High Goal
+    <div class="flex-row">
+      <h2 class="mat-h2">Autonomous</h2>
     </div>
     <div class="flex-row">
-      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.highGoalDec()">-</button>
-      <p class="score">{{ this.highGoalScore }}</p>
-      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.highGoalInc()">+</button>
+      <!-- Sliders don't look right; good reason to just make a theme -->
+      <mat-slide-toggle formControlName="autoLine" color="primary">
+        Moved completely off auto line
+      </mat-slide-toggle>
     </div>
+
     <div class="flex-row score-label">
-      Low Goal
+      Auto Inner Port Score
     </div>
     <div class="flex-row">
-      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.lowGoalDec()">-</button>
-      <p class="score">{{ this.lowGoalScore }}</p>
-      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.lowGoalInc()">+</button>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.autoPortInnerScoreDec()">-</button>
+      <p class="score">{{ this.autoPortInnerScore }}</p>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.autoPortInnerScoreInc()">+</button>
     </div>
+    <div class="flex-row score-label">
+      Auto Top Port Score
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.autoPortTopScoreDec()">-</button>
+      <p class="score">{{ this.autoPortTopScore }}</p>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.autoPortTopScoreInc()">+</button>
+    </div>
+    <div class="flex-row score-label">
+      Auto Bottom Port Score
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.autoPortBottomScoreDec()">-</button>
+      <p class="score">{{ this.autoPortBottomScore }}</p>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.autoPortBottomScoreInc()">+</button>
+    </div>
+
+    <div class="flex-row">
+      <h2 class="mat-h2">Teleop</h2>
+    </div>
+    <div class="flex-row score-label">
+      Teleop Inner Port Score
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.teleopPortInnerScoreDec()">-</button>
+      <p class="score">{{ this.teleopPortInnerScore }}</p>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.teleopPortInnerScoreInc()">+</button>
+    </div>
+    <div class="flex-row score-label">
+      Teleop Top Port Score
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.teleopPortTopScoreDec()">-</button>
+      <p class="score">{{ this.teleopPortTopScore }}</p>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.teleopPortTopScoreInc()">+</button>
+    </div>
+    <div class="flex-row score-label">
+      Teleop Bottom Port Score
+    </div>
+    <div class="flex-row">
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.teleopPortBottomScoreDec()">-</button>
+      <p class="score">{{ this.teleopPortBottomScore }}</p>
+      <button mat-raised-button color="ts-red" class="pm-button" (click)="this.teleopPortBottomScoreInc()">+</button>
+    </div>
+
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="controlPanelColor" color="primary">
+        Control Panel to Correct Color
+      </mat-slide-toggle>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="controlPanelRotation" color="primary">
+        Control Panel Rotation Count Correct
+      </mat-slide-toggle>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="groundPickup" color="primary">
+        Ground Pickup Capable
+      </mat-slide-toggle>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="humanLoadingPort" color="primary">
+        Human Loading Port
+      </mat-slide-toggle>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="goesUnderControlPanel" color="primary">
+        Goes Under Control Panel
+      </mat-slide-toggle>
+    </div>
+
+    <div class="flex-row">
+      <h2 class="mat-h2">Endgame</h2>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="canHang" color="primary">
+        Can Climb
+      </mat-slide-toggle>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="canMoveOnBar" color="primary">
+        Can Move On Bar
+      </mat-slide-toggle>
+    </div>
+    <div class="flex-row">
+      <mat-slide-toggle formControlName="canBuddyHang" color="primary">
+        Can Buddy Climb
+      </mat-slide-toggle>
+    </div>
+
     <div class="flex-row">
       <mat-form-field class="comment-box">
         <mat-label>Match Notes:</mat-label>

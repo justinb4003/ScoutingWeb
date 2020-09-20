@@ -1,3 +1,8 @@
+mat-slide-toggle {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .pm-button {
   width: 4em;
   height: 2em;
@@ -21,16 +26,15 @@
 }
 
 .score {
-  font-size: 24pt;
-  font-weight: bold;
-  margin-left: 1em;
-  margin-right: 1em;
+  font-size: 20pt;
+  font-weight: normal;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   align-self: baseline;
 }
 
 .score-label {
-  font-size: 14pt;
-  font-weight: bold;
+  font-size: 12pt;
 }
 
 .comment-box {

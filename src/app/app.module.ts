@@ -28,6 +28,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { HttpClientModule } from '@angular/common/http';
 import { ScoutMatchComponent } from './components/2019/scout-match/scout-match.component';
@@ -73,6 +74,7 @@ import { ResultsComponent } from './components/2019/results/results.component';
     MatProgressSpinnerModule,
     MatChipsModule,
     MatBadgeModule,
+    MatSnackBarModule,
     MatAutocompleteModule,
     AppRoutingModule,
     AppRoutingModule
