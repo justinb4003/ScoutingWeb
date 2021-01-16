@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { MatchResults } from 'src/app/shared/models/2019/match-results.model';
-import { DataStorageService } from 'src/app/shared/services/2019/data-storage.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatchResults } from '../../../shared/models/2019/match-results.model';
+import { DataStorageService } from '../../../shared/services/2019/data-storage.service';
 
 @Component({
   selector: 'app-scout-match',

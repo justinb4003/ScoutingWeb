@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { MatchResults } from 'src/app/shared/models/2019/match-results.model'
+import { MatchResults } from '../../../shared/models/2019/match-results.model'
 import { Observable } from 'rxjs';
 
 @Injectable({
